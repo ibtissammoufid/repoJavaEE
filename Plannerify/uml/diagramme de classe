@@ -1,0 +1,26 @@
+@startuml
+
+title Classes - Class Diagram
+
+
+class Utilisateur
+
+class Client
+class Organisateur
+
+
+class Menu
+
+Client "*" - "*" Organisateur
+(Client, Menu) .. Reservation
+
+Utilisateur <|-- Client
+
+Utilisateur <|-- Organisateur
+
+
+Organisateur "1" *-- "*" Menu
+
+
+
+@enduml
